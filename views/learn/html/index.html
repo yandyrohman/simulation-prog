@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Page not found | Chameleon</title>
+	<style>
+	body{
+		position: fixed;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 100%;
+		width: 100%;
+		height: 100%;
+		align-items: center;
+		justify-items: center;
+	}
+		.error{
+			grid-column: 2/3;
+			display: grid;
+			align-items: center;
+			font-size: 40px;
+		}
+		.error span{
+			display: grid;
+			justify-items: center;
+			font-size: 70px;
+		}
+	</style>
+</head>
+<body>
+<div class="error"><span>404</span>Page not found</div>
+</body>
+</html>

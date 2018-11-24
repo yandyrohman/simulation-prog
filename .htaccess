@@ -1,0 +1,37 @@
+# 1 ---- 404 file not found ----
+
+ErrorDocument 404 http://localhost/chameleon/error
+
+# 2 ---- Prevent ignore directory file list ----
+
+IndexIgnore *
+
+# 3 ---- Page render extension ----
+
+Options +MultiViews
+
+
+
+# Turn Rewrite Engine
+RewriteEngine on
+
+
+# Rewrite for login
+RewriteRule ^index login.php
+
+# Rewrite for signup
+RewriteRule ^signup views/signup/signup.php
+
+#Rewrite for all folder
+
+
+#Rewrite for admin
+RewriteRule ^admin views/admin/admin.php
+#Rewrite for user
+RewriteRule ^user views/user/user.php
+#Rewrite for user update
+RewriteRule ^update_user views/user/update_user.php
+#Rewrite for learn
+RewriteRule ^learn views/learn/learn.php
+#Rewrite for learn result
+RewriteRule ^result views/learn/result.php

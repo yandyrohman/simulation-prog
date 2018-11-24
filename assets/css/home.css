@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+}
+body{
+	background: #fafafa;
+	font-family: arial;
+	color: #f79500;
+}
+
+
+	.container{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+		.user{
+			display: grid;
+			grid-template-rows: repeat(1, 120px);
+			grid-template-columns: 1fr;
+			justify-items: center;
+			margin-top: 100px;
+		}
+			.user img{
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				border: 1px solid #ff8d00;
+				align-self: center;
+				/*margin-bottom: 20px;*/
+			}
+			.user-name{
+				margin-bottom: 10px;
+				font-size: 20px;
+			}
+			.user-rank{
+				margin-bottom: 10px;
+				font-size: 14px;
+			}
+		.top-title{
+			display: grid;
+			background: #ff8d00;
+			color: #ff6200;
+			height: 50px;
+			align-items: center;
+			padding-left: 15px;
+			font-size: 20px;
+		}
+		.tutorial-box{
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+			grid-auto-rows: minmax(100px, auto);
+			grid-gap: 10px;
+			margin: 30px;
+			align-items: center;
+		}
+			.tutorial-card{
+				display: grid;
+				width: 200px;
+				height: 100px;
+				border-radius: 5px;
+				background: #ff8d00;
+				align-items: end;
+				justify-items: center;
+				cursor: pointer;
+				border: 2px solid #ff6200;
+				color: white;
+				font-size: 20px;
+			}
+				.tutorial-card:hover{
+					background: #f79500;
+				}
+				.tutorial-card span{
+					color: #ff6200;
+					align-self: start;
+					font-size: 16px;
+				}
+
+/* For Mobile */
+@media screen and (max-width: 800px){
+	.tutorial-box{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-auto-rows: minmax(100px, auto);
+		grid-gap: 10px;
+		margin: 30px;
+		align-items: center;
+		justify-items: center;
+	}
+
+
+}

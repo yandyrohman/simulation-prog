@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+}
+
+.container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+	.result-box {
+		width: auto;
+		height: auto;
+		display: grid;
+		grid-template-columns: auto;
+		grid-template-rows: 50px 50px;
+		grid-gap: 20px;
+		font-family: arial;
+		font-size: 40px;
+		color: #444;
+	}
+
+		.result-box div a svg {
+			fill: #33691E;
+		}
